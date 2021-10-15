@@ -52,5 +52,6 @@ public class Test implements Serializable {
 
     public void copy(Test source){
         BeanUtil.copyProperties(source,this, CopyOptions.create().setIgnoreNullValue(true));
+        System.out.println("非常漂亮");
     }
 }
